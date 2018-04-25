@@ -1,0 +1,39 @@
+/* ---------------------- ABOUT ---------------------- */
+
+.about {
+    width: 100%;
+    height: auto;
+
+    .contendor {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+    }
+
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: lighter;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: #6b6b6b;
+    }
+
+    p {
+        text-align: center;
+        color: #6b6b6b;
+        padding-bottom: 20px;
+    }
+
+    &__tablet {
+        margin: 2.5em auto;
+        width: 90%;
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+
+    }
+}

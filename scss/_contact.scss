@@ -1,0 +1,57 @@
+/* --------------------- CONTACTO -------------------- */
+
+.contacto {
+    width: 100%;
+    height: auto;
+    margin: 0 0 30px 0;
+    h2 {
+        text-align: center;
+        margin: 20px 0;
+        padding-top: 20px;
+        font-weight: lighter;
+        color: $TextColor;
+    }
+    p {
+        text-align: center;
+        color: $TextColor;
+        margin-bottom: 40px;
+    }
+    form {
+        width: 95%;
+        height: auto;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+
+    }
+    input {
+        width: 100%;
+        height: 35px;
+        margin: 10px 0;
+    }
+
+    textarea {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .btn-form {
+        width: 100%;
+        height: 40px;
+        margin: 10px 0;
+        background: $Principal;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}

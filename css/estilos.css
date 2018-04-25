@@ -1,0 +1,406 @@
+/* ---------------------- RESET ---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+/* --------------------- HEADER --------------------- */
+.header {
+  width: 100%;
+  height: 75px;
+  background: #2c3e50;
+  color: #fff;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .header .contendor {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .contendor .logo {
+      font-size: 28px;
+      font-weight: bold; }
+    .header .contendor .menu-burger {
+      border: 1px solid red;
+      cursor: pointer; }
+    .header .contendor nav {
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      left: -100%;
+      -webkit-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
+      .header .contendor nav.showMenu {
+        left: 0; }
+      .header .contendor nav .menu__item {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(44, 62, 80, 0.9); }
+      .header .contendor nav .menu__link {
+        color: #fff;
+        text-decoration: none;
+        padding-left: 18px;
+        display: block; }
+        .header .contendor nav .menu__link:hover {
+          background: rgba(255, 255, 255, 0.05); }
+
+/* --------------------- BANNER --------------------- */
+.banner {
+  width: 100%;
+  height: auto;
+  background: #2c3e50; }
+  .banner .contendor {
+    width: 95%;
+    height: 100%;
+    margin: auto; }
+  .banner .banner__titulo {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 35px;
+    font-weight: lighter;
+    color: #fff; }
+  .banner .banner__subtitulo {
+    text-align: center;
+    padding-top: 21px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fff; }
+  .banner .banner__img {
+    margin: 2.5em auto;
+    width: 90%;
+    height: auto; }
+    .banner .banner__img--laptop {
+      width: 100%; }
+
+/* ---------------------- ABOUT ---------------------- */
+.about {
+  width: 100%;
+  height: auto; }
+  .about .contendor {
+    width: 95%;
+    height: 100%;
+    margin: auto; }
+  .about h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #6b6b6b; }
+  .about p {
+    text-align: center;
+    color: #6b6b6b;
+    padding-bottom: 20px; }
+  .about__tablet {
+    margin: 2.5em auto;
+    width: 90%;
+    height: auto; }
+    .about__tablet img {
+      width: 100%; }
+
+/* ---------------------- TEAM ---------------------- */
+.team {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
+  .team .contendor {
+    width: 95%;
+    height: auto;
+    margin: auto; }
+  .team__titulo {
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #6b6b6b; }
+  .team .card {
+    width: 300px;
+    height: 420px;
+    margin: 0 auto 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around; }
+    .team .card .card__img {
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      display: block;
+      width: 100%;
+      padding: 8px 40px 0; }
+    .team .card .card__titulo {
+      font-size: 22px;
+      font-weight: lighter;
+      color: #6b6b6b; }
+    .team .card .card__description {
+      display: block;
+      height: 75px;
+      line-height: 25px;
+      text-align: center;
+      color: #6b6b6b; }
+    .team .card .card__img-mail {
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 30px;
+      height: 20px;
+      background: #2c3e50;
+      padding: 10px 25px;
+      border-radius: 3px; }
+
+/* ------------------- PORTFOLIO ------------------- */
+.portfolio {
+  /*outline: 1px solid orange;*/
+  width: 100%;
+  height: auto; }
+  .portfolio .contendor {
+    /*outline: 1px solid blue;*/
+    width: 95%;
+    height: auto;
+    margin: auto; }
+    .portfolio .contendor p {
+      text-align: center;
+      color: #6b6b6b;
+      padding-bottom: 20px; }
+    .portfolio .contendor h2 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: lighter;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      color: #6b6b6b; }
+    .portfolio .contendor nav {
+      margin: 0 0 30px 0; }
+      .portfolio .contendor nav .menu_tabs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        list-style: none; }
+        .portfolio .contendor nav .menu_tabs .menu_tabs__item {
+          margin: 3px 3px;
+          width: 100px;
+          height: 45px;
+          text-align: center;
+          line-height: 45px;
+          color: #6b6b6b;
+          background: #ddd;
+          border-radius: 5px; }
+        .portfolio .contendor nav .menu_tabs .menu_tabs__link {
+          text-decoration: none;
+          color: #6b6b6b;
+          display: block; }
+          .portfolio .contendor nav .menu_tabs .menu_tabs__link:hover {
+            background: #eee; }
+    .portfolio .contendor .portfolio_contenedor {
+      width: 95%;
+      height: auto;
+      margin: 0 auto;
+      color: #6b6b6b;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+      align-content: space-between; }
+      .portfolio .contendor .portfolio_contenedor .tarjeta_portfolio {
+        position: relative;
+        width: 285px;
+        height: 290px;
+        margin: 10px 5px;
+        background: #eeeeee; }
+        .portfolio .contendor .portfolio_contenedor .tarjeta_portfolio .titulo_imagen {
+          font-size: 22px;
+          position: absolute;
+          top: 70px;
+          left: 38%; }
+        .portfolio .contendor .portfolio_contenedor .tarjeta_portfolio .tarjeta_info {
+          position: absolute;
+          top: 170px;
+          left: 5;
+          width: 285px;
+          height: 120px;
+          background: rgba(107, 107, 107, 0.2);
+          color: #fff; }
+          .portfolio .contendor .portfolio_contenedor .tarjeta_portfolio .tarjeta_info h4 {
+            text-align: center;
+            margin: 15px 0; }
+          .portfolio .contendor .portfolio_contenedor .tarjeta_portfolio .tarjeta_info p {
+            padding: 0 8px 8px 8px;
+            color: #fff; }
+      .portfolio .contendor .portfolio_contenedor .tarjeta_portfolio_link {
+        width: 285px;
+        height: 290px;
+        margin: 10px 5px;
+        background: #aaa;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+
+/* --------------------- CONTACTO -------------------- */
+.contacto {
+  width: 100%;
+  height: auto;
+  margin: 0 0 30px 0; }
+  .contacto h2 {
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 20px;
+    font-weight: lighter;
+    color: #6b6b6b; }
+  .contacto p {
+    text-align: center;
+    color: #6b6b6b;
+    margin-bottom: 40px; }
+  .contacto form {
+    width: 95%;
+    height: auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around; }
+  .contacto input {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0; }
+  .contacto textarea {
+    margin: 10px 0;
+    width: 100%; }
+  .contacto .btn-form {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    background: #2c3e50;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* --------------------- FOOTER -------------------- */
+footer {
+  width: 100%;
+  height: 300px; }
+  footer .contenedor {
+    width: 95%;
+    height: auto;
+    margin: 30px auto 0; }
+  footer nav {
+    padding: 30px 7px 0 7px; }
+    footer nav .menu {
+      margin-bottom: 20px;
+      list-style: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      footer nav .menu .menu__item {
+        height: 40px;
+        line-height: 40px; }
+        footer nav .menu .menu__item .menu__link {
+          color: #6b6b6b;
+          text-decoration: none; }
+          footer nav .menu .menu__item .menu__link:hover {
+            color: #2c3e50;
+            border-bottom: 1px solid #2c3e50; }
+  footer .copy {
+    text-align: center;
+    color: #6b6b6b; }

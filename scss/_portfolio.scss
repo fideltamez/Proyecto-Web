@@ -1,0 +1,107 @@
+/* ------------------- PORTFOLIO ------------------- */
+
+.portfolio {
+    /*outline: 1px solid orange;*/
+    width: 100%;
+    height: auto;
+    .contendor {
+        /*outline: 1px solid blue;*/
+        width: 95%;
+        height: auto;
+        margin: auto;
+        p {
+            text-align: center;
+            color: #6b6b6b;
+            padding-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: lighter;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            color: $TextColor;
+        }
+        nav {
+            margin: 0 0 30px 0;
+            .menu_tabs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style: none;
+                .menu_tabs__item {
+                    margin: 3px 3px;
+                    width: 100px;
+                    height: 45px;
+                    text-align: center;
+                    line-height: 45px;
+                    color: $TextColor;
+                    background: #ddd;
+                    border-radius: 5px;
+                }
+                .menu_tabs__link {
+                    text-decoration: none;
+                    color: $TextColor;
+                    display: block;
+
+                    &:hover {
+                        background: #eee;
+                    }
+                }
+
+            }
+        }
+        .portfolio_contenedor {
+            width: 95%;
+            height: auto;
+            margin: 0 auto;
+            color: $TextColor;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+
+            .tarjeta_portfolio {
+                position: relative;
+                width: 285px;
+                height: 290px;
+                margin: 10px 5px;
+                background: #eeeeee;
+
+                .titulo_imagen {
+                    font-size: 22px;
+                    position: absolute;
+                    top: 70px;
+                    left: 38%;
+                }
+
+                .tarjeta_info {
+                    position: absolute;
+                    top: 170px;
+                    left: 5;
+                    width: 285px;
+                    height: 120px;
+                    background: rgba($TextColor, .2);
+                    color: #fff;
+                    h4 {
+                        text-align: center;
+                        margin: 15px 0;
+                    }
+                    p {
+                        padding: 0 8px 8px 8px;
+                        color: #fff;
+                    }
+                }
+            }
+            .tarjeta_portfolio_link {
+                width: 285px;
+                height: 290px;
+                margin: 10px 5px;
+                background: #aaa;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
